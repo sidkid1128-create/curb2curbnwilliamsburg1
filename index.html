@@ -3,38 +3,449 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Curb 2 Curb Williamsburg</title>
 
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#111;
-  color:white;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+line-height:1.6;
 }
 
 .hero{
-  text-align:center;
-  padding:60px 20px;
-  background:linear-gradient(to bottom,#000,#1a1a1a);
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75));
+text-align:center;
+padding:60px 20px;
 }
 
 .logo{
-  width:300px;
-  max-width:90%;
-  margin-bottom:20px;
+width:350px;
+max-width:90%;
+margin-bottom:25px;
 }
 
 .hero h1{
-  font-size:3rem;
-  color:#f4c20d;
-  margin-bottom:10px;
+font-size:3.5rem;
+color:#f4c20d;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:25px;
+}
+
+.button{
+display:inline-block;
+padding:15px 30px;
+background:#f4c20d;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+border-radius:12px;
+margin:10px;
+transition:.3s;
+}
+
+.button:hover{
+background:#ffd84d;
+transform:translateY(-2px);
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:70px 20px;
+}
+
+.section-title{
+text-align:center;
+color:#f4c20d;
+font-size:2.2rem;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1c1c1c;
+padding:25px;
+border-radius:15px;
+border:1px solid #333;
+}
+
+.card h3{
+color:#f4c20d;
+margin-bottom:15px;
+}
+
+.marketplace{
+background:#181818;
+text-align:center;
+padding:70px 20px;
+}
+
+.marketplace h2{
+color:#f4c20d;
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+.pricing{
+font-size:2rem;
+font-weight:bold;
+color:#f4c20d;
+margin:20px 0;
+}
+
+.how-it-works{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.step{
+background:#1d1d1d;
+padding:30px;
+border-radius:15px;
+}
+
+.step-number{
+font-size:3rem;
+font-weight:bold;
+color:#f4c20d;
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.review{
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
+}
+
+.contact{
+text-align:center;
+padding:60px 20px;
+background:#181818;
+}
+
+.contact h2{
+color:#f4c20d;
+margin-bottom:15px;
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+color:#999;
+}
+
+ul{
+padding-left:20px;
+}
+
+.service-area{
+text-align:center;
+font-size:1.1rem;
+margin-top:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="logo.png" alt="Curb 2 Curb Williamsburg" class="logo">
+
+<h1>Curb 2 Curb Williamsburg</h1>
+
+<p>
+Ready on the Curb. Delivered Around the Burgh.
+</p>
+
+<a class="button" href="https://tally.so/r/EkZ0JB">
+Schedule Pickup
+</a>
+
+<a class="button" href="https://marketspacepickup.com">
+Marketplace Pickup
+</a>
+
+</section>
+
+<!-- MARKETPLACE SECTION -->
+
+<section class="marketplace">
+
+<h2>Bought Something on Facebook Marketplace?</h2>
+
+<p>
+No truck? No problem.
+</p>
+
+<p>
+We pick up furniture, appliances, electronics, boxes,
+and other large items directly from the seller and
+deliver them to your curb.
+</p>
+
+<div class="pricing">
+Starting at $65
+</div>
+
+<ul style="list-style:none;">
+<li>✓ Facebook Marketplace Pickups</li>
+<li>✓ Craigslist Purchases</li>
+<li>✓ OfferUp Deliveries</li>
+<li>✓ Same Day Availability</li>
+<li>✓ Large Items Welcome</li>
+<li>✓ Local Williamsburg & Brooklyn Service</li>
+</ul>
+
+<br>
+
+<a class="button" href="https://marketspacepickup.com">
+Book Marketplace Pickup
+</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Marketplace Pickups</h3>
+<p>
+Purchased furniture, appliances, electronics,
+or household items online? We'll pick them up and
+deliver them to your curb.
+</p>
+</div>
+
+<div class="card">
+<h3>Furniture Delivery</h3>
+<p>
+Couches, beds, dressers, tables,
+chairs, and more.
+</p>
+</div>
+
+<div class="card">
+<h3>Apartment Moves</h3>
+<p>
+Small local apartment moves and
+single-item transportation.
+</p>
+</div>
+
+<div class="card">
+<h3>Boxes & Personal Items</h3>
+<p>
+Need boxes, storage items,
+or personal belongings delivered?
+We've got you covered.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section class="section">
+
+<h2 class="section-title">
+How It Works
+</h2>
+
+<div class="how-it-works">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Book Online</h3>
+<p>
+Schedule your pickup through our simple online form.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>We Pick It Up</h3>
+<p>
+Our driver arrives at the seller's location and loads the item.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Delivered To Your Curb</h3>
+<p>
+Your item is delivered safely to your location.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+
+<section class="section">
+
+<h2 class="section-title">
+Pricing & Rules
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Pricing</h3>
+
+<p><strong>Starting Price:</strong> $65</p>
+<br>
+
+<p>✓ 10 Minutes Load Included</p>
+<p>✓ 10 Minutes Unload Included</p>
+<p>✓ $30 Every Additional 15 Minutes</p>
+
+</div>
+
+<div class="card">
+<h3>Customer Responsibilities</h3>
+
+<ul>
+<li>Items must be curbside and ready.</li>
+<li>Customer must be present at delivery.</li>
+<li>Driver must have safe access.</li>
+<li>Extra wait time is billable.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="section">
+
+<h2 class="section-title">
+Customer Reviews
+</h2>
+
+<div class="reviews">
+
+<div class="review">
+★★★★★
+
+<p>
+"They picked up my Marketplace sofa and had it delivered the same day."
+</p>
+
+<strong>- Local Customer</strong>
+
+</div>
+
+<div class="review">
+★★★★★
+
+<p>
+"Way easier than renting a truck. Fast and affordable."
+</p>
+
+<strong>- Brooklyn Customer</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICE AREA -->
+
+<section class="contact">
+
+<h2>
+Service Area
+</h2>
+
+<p class="service-area">
+Williamsburg • Greenpoint • Bushwick • Bedford-Stuyvesant • Brooklyn • Queens
+</p>
+
+<br>
+
+<a class="button" href="https://tally.so/r/EkZ0JB">
+Schedule Your Pickup
+</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>
+Contact Us
+</h2>
+
+<p>
+curb2curbnwilliamsburg@gmail.com
+</p>
+
+<p>
+Marketplace Pickups • Local Deliveries • Small Moves
+</p>
+
+</section>
+
+<footer>
+
+<p>
+CURB 2 CURB WILLIAMSBURG © 2026
+</p>
+
+<p>
+Ready on the Curb. Delivered Around the Burgh.
+</p>
+
+</footer>
+
+</body>
+</html>  margin-bottom:10px;
 }
 
 .hero p{
